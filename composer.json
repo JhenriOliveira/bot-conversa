@@ -1,0 +1,22 @@
+{
+    "name": "orbitalsoft/bot-conversa",
+    "description": "Biblioteca para integrar com BotConversa",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Joao Henrique",
+            "email": "jhenrique2602@gmail.com",
+            "homepage": "https://github.com/JhenriOliveira"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "BotConversa\\": "src/"
+      }
+    },
+    "require": {
+      "php": ">=7.4",
+      "vlucas/phpdotenv": "^5.5"
+    }
+}
+  
