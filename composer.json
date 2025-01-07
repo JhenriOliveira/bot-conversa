@@ -2,7 +2,6 @@
     "name": "orbitalsoft/bot-conversa",
     "description": "Biblioteca para integrar com BotConversa",
     "type": "library",
-      "license": "MIT",
     "authors": [
         {
             "name": "Joao Henrique",
