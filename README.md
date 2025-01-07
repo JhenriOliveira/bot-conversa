@@ -4,7 +4,7 @@ Biblioteca PHP para integrar com o BotConversa API.
 Essa biblioteca facilita a comunicação com o BotConversa, fornecendo métodos prontos para gerenciar assinantes, enviar mensagens e mais.
 
 # Instalação
-composer require orbitalsoft/bot-conversa
+composer require jhenrique/bot-conversa
 
 ---------------------------------------------
 # Configuração
