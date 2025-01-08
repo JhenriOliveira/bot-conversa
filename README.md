@@ -15,6 +15,8 @@ BASE_URL=https://api.botconversa.com
 API_KEY=seu_api_key_aqui
 API_TIMEOUT=30
 
+Crie uma pasta com nome "logs" na raiz do projeto
+
 -----------------------------------------------
 # Carregue as variáveis de ambiente
 Antes de usar a biblioteca, certifique-se de que as variáveis foram carregadas. Por exemplo:
@@ -69,7 +71,7 @@ print_r($response);
 
 - Flows
     getFlows() (*NOVO*)
-    
+
 -----------------------------------------------
 # Licença
 Este projeto está licenciado sob a licença MIT.
