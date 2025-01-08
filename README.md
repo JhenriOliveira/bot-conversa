@@ -47,5 +47,29 @@ $response = $botconversa->sendMessage('contato_id', 'text', 'Olá, tudo bem?');
 print_r($response);
 
 -----------------------------------------------
+# Funções
+- Subscribers
+    getSubscriberByPhone(string $phone)
+    getSubscribers(int $page)
+    createSubscriber(string $phone, string $first_name, string $last_name)
+    deleteSubscriber(string $id)
+    addTagSubscriber(string $id, string $id_tag)
+    deleteTagSubscriber(string $id, string $id_tag)
+    addSequencesSubscriber(string $id, string $id_sequence)
+    deleteSequencesSubscriber(string $id, string $id_sequence)
+    addCampaignsSubscriber(string $id, string $id_campaign)
+    deleteCampaignsSubscriber(string $id, string $id_campaign)
+
+- Message
+    sendMessage(string $id, string $type, string $message)
+    sendMessageFlow(string $id, string $flow)
+
+- Tags
+    getTags()
+
+- Flows
+    getFlows()
+
+-----------------------------------------------
 # Licença
 Este projeto está licenciado sob a licença MIT.

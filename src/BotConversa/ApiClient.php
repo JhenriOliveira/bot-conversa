@@ -145,4 +145,71 @@ class ApiClient
 
         return $this->callApi($endpoint, 'POST', $body);
     }
+
+    public function getFlows(): ?array
+    {
+        $endpoint = "webhook/subscriber/flows/";
+
+        return $this->callApi($endpoint, 'GET');
+    }
+
+    public function sendMessageFlow(string $id, string $flow): ?array
+    {
+        $endpoint = "webhook/subscriber/{$id}/send_flow/";
+
+        $body = [
+            'flow' => $flow
+        ];
+
+        return $this->callApi($endpoint, 'POST', $body);
+    }
+
+    public function getTags(): ?array
+    {
+        $endpoint = "webhook/subscriber/tags/";
+
+        return $this->callApi($endpoint, 'GET');
+    }
+
+    public function addTagSubscriber(string $id, string $id_tag): ?array
+    {
+        $endpoint = "webhook/subscriber/{$id}/tags/{$id_tag}/";
+
+        return $this->callApi($endpoint, 'POST');
+    }
+
+    public function deleteTagSubscriber(string $id, string $id_tag): ?array
+    {
+        $endpoint = "webhook/subscriber/{$id}/tags/{$id_tag}/";
+
+        return $this->callApi($endpoint, 'DELETE');
+    }
+
+    public function addSequencesSubscriber(string $id, string $id_sequence): ?array
+    {
+        $endpoint = "webhook/subscriber/{$id}/sequences/{$id_sequence}/";
+
+        return $this->callApi($endpoint, 'POST');
+    }
+
+    public function deleteSequencesSubscriber(string $id, string $id_sequence): ?array
+    {
+        $endpoint = "webhook/subscriber/{$id}/sequences/{$id_sequence}/";
+
+        return $this->callApi($endpoint, 'DELETE');
+    }
+
+    public function addCampaignsSubscriber(string $id, string $id_campaign): ?array
+    {
+        $endpoint = "webhook/subscriber/{$id}/campaigns/{$id_campaign}/";
+
+        return $this->callApi($endpoint, 'POST');
+    }
+
+    public function deleteCampaignsSubscriber(string $id, string $id_campaign): ?array
+    {
+        $endpoint = "webhook/subscriber/{$id}/campaigns/{$id_campaign}/";
+
+        return $this->callApi($endpoint, 'DELETE');
+    }
 }
