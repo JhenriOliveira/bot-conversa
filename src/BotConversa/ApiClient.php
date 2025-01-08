@@ -148,7 +148,7 @@ class ApiClient
 
     public function getFlows(): ?array
     {
-        $endpoint = "webhook/subscriber/flows/";
+        $endpoint = "webhook/flows/";
 
         return $this->callApi($endpoint, 'GET');
     }
@@ -166,7 +166,7 @@ class ApiClient
 
     public function getTags(): ?array
     {
-        $endpoint = "webhook/subscriber/tags/";
+        $endpoint = "webhook/tags/";
 
         return $this->callApi($endpoint, 'GET');
     }

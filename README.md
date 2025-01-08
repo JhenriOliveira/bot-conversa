@@ -53,23 +53,23 @@ print_r($response);
     getSubscribers(int $page)
     createSubscriber(string $phone, string $first_name, string $last_name)
     deleteSubscriber(string $id)
-    addTagSubscriber(string $id, string $id_tag)
-    deleteTagSubscriber(string $id, string $id_tag)
-    addSequencesSubscriber(string $id, string $id_sequence)
-    deleteSequencesSubscriber(string $id, string $id_sequence)
-    addCampaignsSubscriber(string $id, string $id_campaign)
-    deleteCampaignsSubscriber(string $id, string $id_campaign)
+    addTagSubscriber(string $id, string $id_tag) (*NOVO*)
+    deleteTagSubscriber(string $id, string $id_tag) (*NOVO*)
+    addSequencesSubscriber(string $id, string $id_sequence) (*NOVO*)
+    deleteSequencesSubscriber(string $id, string $id_sequence) (*NOVO*)
+    addCampaignsSubscriber(string $id, string $id_campaign) (*NOVO*)
+    deleteCampaignsSubscriber(string $id, string $id_campaign) (*NOVO*)
 
 - Message
     sendMessage(string $id, string $type, string $message)
-    sendMessageFlow(string $id, string $flow)
+    sendMessageFlow(string $id, string $flow) (*NOVO*)
 
 - Tags
-    getTags()
+    getTags() (*NOVO*)
 
 - Flows
-    getFlows()
-
+    getFlows() (*NOVO*)
+    
 -----------------------------------------------
 # Licença
 Este projeto está licenciado sob a licença MIT.
